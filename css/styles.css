@@ -1,0 +1,188 @@
+/* General styles */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.flex-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+    margin-top: 20px;
+}
+
+/* Navbar styles */
+.navbar {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: goldenrod;
+}
+.navbar a {
+    text-decoration: none;
+    color: goldenrod;
+    font-size: 16px;
+
+}
+
+/* Footer styles */
+.footer {
+    background-color: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    color: goldenrod;
+}
+
+/* Product page styles */
+.product-details img {
+    width: 100%;
+    height: auto;
+    max-height: 100px;
+    object-fit: contain;
+}
+
+.product-details .card-body {
+    text-align: center;
+}
+
+.product-details .btn {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Cart table styles */
+.table {
+    margin-top: 20px;
+}
+
+.table th, .table td {
+    vertical-align: middle;
+}
+
+.table .btn {
+    margin-right: 5px;
+}
+
+/* Form styles */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form .form-group {
+    margin-bottom: 15px;
+}
+
+form .btn {
+    width: 100%;
+}
+/* Ensure the images are fully visible in their container*/
+.card-img-top {
+   width: 100%;
+    height: 250px; /*Adjust this height as needed*/
+    object-fit: cover; /*Cover ensures the image fills the container while maintaining aspect ratio*/ 
+    object-position: center; /*Center the image within its container*/
+}
+
+/* Hover effect for the card */
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+
+/* Adjust card margin for better spacing */
+.col-md-4 {
+    padding: 0.5rem; /* Add some padding around the cards */
+}
+
+/* Additional styling for card body */
+.card-body {
+    text-align: center;
+}
+/* Card styles for product listing */
+.card {
+    margin-bottom: 20px;
+}
+
+.card img {
+    max-height: auto;
+    object-fit: cover;
+}
+/* Styling for the success alert box */
+.alert-success {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the buttons within the alert */
+.alert-success .btn {
+    font-size: 14px;
+    padding: 8px 12px;
+    margin-left: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.alert-success .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.alert-success .btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+/* Hover effects for the buttons */
+.alert-success .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+.alert-success .btn-secondary:hover {
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+    }
+    .col-md-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}

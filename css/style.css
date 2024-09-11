@@ -1,0 +1,70 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+        .blinking-text {
+            font-size: 24px;
+            font-weight: bold;
+            animation: blink 1.5s infinite;
+        }
+
+        @keyframes blink {
+            0% {
+                color: red;
+                opacity: 1;
+            }
+            25% {
+                color: blue;
+                opacity: 0.5;
+            }
+            50% {
+                color: green;
+                opacity: 1;
+            }
+            75% {
+                color: yellow;
+                opacity: 0.5;
+            }
+            100% {
+                color: red;
+                opacity: 1;
+            }
+        }
+h2 {
+    margin-bottom: 20px;
+}
+
+header {
+    height: 80vh;
+    position: relative;
+}
+
+header .carousel-inner {
+    height: 100%;
+}
+
+header .carousel-item {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+header .carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+
+#about img {
+    border-radius: 10px;
+}
+
+#projects .card {
+    border: none;
+}
+
+#projects .card img {
+    border-radius: 10px 10px 0 0;
+}
+
+footer {
+    margin-top: 20px;
+}
