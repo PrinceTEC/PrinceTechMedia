@@ -44,8 +44,7 @@ $cartCount = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
         </li>
         <li class="nav-item">
         <a class="nav-link" href="/ecommerce/pages/signup.php">Signup</a>
-        </li>
-      <?php endif;?>
+        </li> <?php endif; ?>
     </ul>
   </div>
 </nav>

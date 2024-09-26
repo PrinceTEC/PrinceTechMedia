@@ -1,5 +1,6 @@
 <?php include '../includes/header.php';?>
 <?php
+ob_start();
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
 }
@@ -25,8 +26,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     unset($_SESSION['cart']);
     echo '<p>Order placed successfully!</p>';
 }
+ob_end_flush();
 ?>
-
 <h1>Checkout</h1>
 <form method="post" action="checkout.php">
     <input type="hidden" name="total" value="<?php echo $total; ?>">
@@ -45,6 +46,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <input type="hidden" name="order_id" value="ORDER_ID"> <!-- Replace ORDER_ID with the actual order ID -->
     <button type="submit" class="btn btn-primary">Pay with M-Pesa</button>
 </form>
-
 
 <?php include '../includes/footer.php'; ?>
